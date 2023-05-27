@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script src="
+https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js
+"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+</style>
+<script type="module" src="script.js"></script>
+<html lang="en">
+
+<head>
+  <nav>
+    <div class="sped">
+      <a href="index.html" aria-current="page">Home</a>
+    </div>
+    <a href="p.html">Search</a>
+    <a href="a.html">Apps</a>
+    <a href="/">Games</a>
+    <a onclick="openFullscreenIframe()">About:Blank</a>
+  </nav>
+  <title>Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="module" src="script.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="gamesearch">
+      <form class="flex items-center">
+        <div class="relative w-full">
+          <div class="
+                absolute
+                inset-y-0
+                left-0
+                flex
+                items-center
+                pl-3
+                pointer-events-none
+              ">
+            <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor"
+              viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </div>
+          <input type="text" class="
+                bg-gray-50
+                border border-gray-300
+                text-gray-900 text-sm
+                rounded-lg
+                focus:ring-blue-500 focus:border-blue-500
+                block
+                w-full
+                pl-10
+                p-2.5
+                dark:bg-gray-700
+                dark:border-gray-600
+                dark:placeholder-gray-400
+                dark:text-white
+                dark:focus:ring-blue-500
+                dark:focus:border-blue-500
+              " placeholder="Search Games...." required id="search-box" name="search-box" type="text" />
+        </div>
+      </form>
+    </div>
+
+    <div class="image-container">
+      <div class="image" data-title="roblox">
+        <a href="gfiles/gamesuggestion.html" target="_blank">
+          <img src="img/suggest.png" />
+        </a>
+        <h3>Game Suggestion</h3>
+      </div>
+      <div class="image" data-title="roblox">
+        <a href="gfiles/roblox.html" target="_blank">
+          <img src="img/roblox.png" />
+        </a>
+        <h3>Roblox</h3>
+      </div>
+      <div class="image" data-title="retrobowl">
+        <a href="gfiles/retrobowl.html" target="_blank">
+          <img src="img/retrobowl.png" />
+        </a>
+        <h3>Retrobowl</h3>
+      </div>
+      <div class="image" data-title="shell shockers">
+        <a href="gfiles/shellshock.html" target="_blank">
+          <img src="img/shell.jpg" />
+        </a>
+        <h3>Shell Shockers</h3>
+      </div>
+      <div class="image" data-title="madgunz">
+        <a href="gfiles/madgunz.html" target="_blank">
+          <img src="img/madgunz.jpg" />
+        </a>
+        <h3>MadGunz</h3>
+      </div>
+      <div class="image" data-title="1v1.lol">
+        <a href="gfiles/1v1.html" target="_blank">
+          <img src="img/1v1.jpg" data-search="1v1.lol" />
+        </a>
+        <h3>1v1.lol</h3>
+      </div>
+      <div class="image" data-title="blockpost">
+        <a href="gfiles/blockpost.html" target="_blank">
+          <img src="img/blockpost.jpg" data-search="blockpost" />
+        </a>
+        <h3>Block-Post</h3>
+      </div>
+      <div class="image" data-title="taming.io">
+        <a href="gfiles/taming.html" target="_blank">
+          <img src="img/taming.jpg" data-search="taming.io" />
+        </a>
+        <h3>Taming.io</h3>
+      </div>
+      <div class="image" data-title="venge.io">
+        <a href="gfiles/venge.html" target="_blank">
+          <img src="img/venge.jpg" data-search="venge.io" />
+        </a>
+        <h3>Venge.io</h3>
+      </div>
+      <div class="image" data-title="basketball stars">
+        <a href="gfiles/basketball.html" target="_blank">
+          <img src="img/basketball.jpg" data-search="basketball stars" />
+        </a>
+        <h3>Basketball Stars</h3>
+      </div>
+      <div class="image" data-title="combat online">
+        <a href="gfiles/combatonline.html" target="_blank">
+          <img src="img/combat.jpg" data-search="combat online" />
+        </a>
+        <h3>Combat Online</h3>
+      </div>
+      <div class="image" data-title="tyran.io">
+        <a href="gfiles/tyran.html" target="_blank">
+          <img src="img/tyran.jpg" data-search="tyran.io" />
+        </a>
+        <h3>Tyran.io</h3>
+      </div>
+      <div class="image" data-title="yohoho.io">
+        <a href="gfiles/yohoho.html" target="_blank">
+          <img src="img/yohoho.jpg" data-search="yohoho.io" />
+        </a>
+        <h3>YoHoHo.io</h3>
+      </div>
+      <div class="image" data-title="lolshot.io">
+        <a href="gfiles/lolshot.html" target="_blank">
+          <img src="img/lolshot.jpg" data-search="lolshot.io" />
+        </a>
+        <h3>Lolshot.io</h3>
+      </div>
+      <div class="image" data-title="devast.io">
+        <a href="gfiles/devast.html" target="_blank">
+          <img src="img/devast.jpg" data-search="devast.io" />
+        </a>
+        <h3>Devast.io</h3>
+      </div>
+      <div class="image" data-title="ev.io">
+        <a href="gfiles/ev.html" target="_blank">
+          <img src="img/ev.jpg" data-search="ev.io" />
+        </a>
+        <h3>Ev.io</h3>
+      </div>
+      <div class="image" data-title="crossy road">
+        <a href="gfiles/crossyroad.html" target="_blank">
+          <img src="img/crossy.jpg" data-search="crossy road" />
+        </a>
+        <h3>Crossy Road</h3>
+      </div>
+      <div class="image" data-title="dead switch 3">
+        <a href="gfiles/deadswitch3.html" target="_blank">
+          <img src="img/deadswitch.jpg" data-search="dead switch 3" />
+        </a>
+        <h3>Dead Switch 3</h3>
+      </div>
+      <div class="image" data-title="basketbros.io">
+        <a href="gfiles/bros.html" target="_blank">
+          <img src="img/bros.jpg" data-search="basket bros.io" />
+        </a>
+        <h3>BasketBros.io</h3>
+      </div>
+      <div class="image" data-title="fnaf 1">
+        <a href="gfiles/roblox.html" target="_blank">
+          <img src="img/fnaf1.jpg" data-search="fnaf 1" />
+        </a>
+        <h3>Fnaf 1</h3>
+      </div>
+      <div class="image" data-title="fnaf 2">
+        <a href="gfiles/roblox.html" target="_blank">
+          <img src="img/fnaf2.jpg" data-search="fnaf 2" />
+        </a>
+        <h3>Fnaf 2</h3>
+      </div>
+      <div class="image" data-title="fnaf 3">
+        <a href="gfiles/roblox.html" target="_blank">
+          <img src="img/fnaf3.jpg" data-search="fnaf 3" />
+        </a>
+        <h3>Fnaf 3</h3>
+      </div>
+      <div class="image" data-title="Pokemon: Fire Red">
+        <a href="gfiles/firered.html" target="_blank">
+          <img src="img/firered.jpg" data-search="fire red" />
+        </a>
+        <h3>Pokemon: Fire Red</h3>
+      </div>
+      <div class="image" data-title="Pokemon: Leaf Green">
+        <a href="gfiles/leafgreen.html" target="_blank">
+          <img src="img/leafgreen.jpg" data-search="leaf green" />
+        </a>
+        <h3>Pokemon: Leaf Green</h3>
+      </div>
+      <div class="image" data-title="Pokemon: Ruby">
+        <a href="gfiles/ruby.html" target="_blank">
+          <img src="img/ruby.jpg" data-search="ruby" />
+        </a>
+        <h3>Pokemon: Ruby</h3>
+      </div>
+      <div class="image" data-title="Pokemon: Sapphire">
+        <a href="gfiles/sappgire.html" target="_blank">
+          <img src="img/sapphire.jpg" data-search="sapphire" />
+        </a>
+        <h3>Pokemon: Sapphire</h3>
+      </div>
+      <div class="image" data-title="Hobo 1">
+        <a href="gfiles/hobo1.html" target="_blank">
+          <img src="img/hobo1.jpg" data-search="hobo 1" />
+        </a>
+        <h3>Hobo 1</h3>
+      </div>
+      <div class="image" data-title="Hobo 2">
+        <a href="gfiles/hobo2.html" target="_blank">
+          <img src="img/hobo2.jpg" data-search="hobo 2" />
+        </a>
+        <h3>Hobo 2</h3>
+      </div>
+      <div class="image" data-title="Hobo 3">
+        <a href="gfiles/hobo3.html" target="_blank">
+          <img src="img/hobo3.jpg" data-search="hobo 3" />
+        </a>
+        <h3>Hobo 3</h3>
+      </div>
+      <div class="image" data-title="Hobo 4">
+        <a href="gfiles/hobo4.html" target="_blank">
+          <img src="img/hobo4.jpg" data-search="hobo 4" />
+        </a>
+        <h3>Hobo 4</h3>
+      </div>
+      <div class="image" data-title="Hobo 5">
+        <a href="gfiles/hobo5.html" target="_blank">
+          <img src="img/hobo5.jpg" data-search="hobo 5" />
+        </a>
+        <h3>Hobo 5</h3>
+      </div>
+      <div class="image" data-title="Hobo 6">
+        <a href="gfiles/hobo6.html" target="_blank">
+          <img src="img/hobo6.jpg" data-search="hobo 6" />
+        </a>
+        <h3>Hobo 6</h3>
+      </div>
+      <div class="image" data-title="Hobo 7">
+        <a href="gfiles/hobo7.html" target="_blank">
+          <img src="img/hobo7.jpg" data-search="hobo 7" />
+        </a>
+        <h3>Hobo 7</h3>
+      </div>
+      <div class="image" data-title="Bloons TD 1">
+        <a href="gfiles/bloons1.html" target="_blank">
+          <img src="img/bloons1.jpg" data-search="bloons td 1" />
+        </a>
+        <h3>Bloons TD 1</h3>
+      </div>
+      <div class="image" data-title="Bloons TD 2">
+        <a href="gfiles/bloons2.html" target="_blank">
+          <img src="img/bloons3.jpg" data-search="bloons td 3" />
+        </a>
+        <h3>Bloons TD 2</h3>
+      </div>
+      <div class="image" data-title="Bloons TD 4">
+        <a href="gfiles/bloons4.html" target="_blank">
+          <img src="img/bloons4.jpg" data-search="bloons td 4" />
+        </a>
+        <h3>Bloons TD 4</h3>
+      </div>
+      <div class="image" data-title="Bloons TD 6">
+        <a href="gfiles/bloons6.html" target="_blank">
+          <img src="img/bloons6.jpg" data-search="bloons td 6" />
+        </a>
+        <h3>Bloons TD 6</h3>
+      </div>
+      <div class="image" data-title="Friday Night Funkin'">
+        <a href="gfiles/funkin.html" target="_blank">
+          <img src="img/funkin.jpg" data-search="friday night funkin'" />
+        </a>
+        <h3>Friday Night Funkin'</h3>
+      </div>
+      <div class="image" data-title="Head Soccer 2022">
+        <a href="gfiles/headsoccer.html" target="_blank">
+          <img src="img/headsoccer.jpg" data-search="head scocer" />
+        </a>
+        <h3>Head Soccer 2022</h3>
+      </div>
+      <div class="image" data-title="Getaway Shootout">
+        <a href="gfiles/getaway.html" target="_blank">
+          <img src="img/getaway-shootout.jpg" data-search="getaway shootout" />
+        </a>
+        <h3>Getaway Shootout</h3>
+      </div>
+      <div class="image" data-title="Jetpack Joyride">
+        <a href="gfiles/jetpack.html" target="_blank">
+          <img src="img/jetpack.jpg" data-search="jetpack joyride" />
+        </a>
+        <h3>Jetpack Joyride</h3>
+      </div>
+      <div class="image" data-title="Moto X3M">
+        <a href="gfiles/moto.html" target="_blank">
+          <img src="img/moto.jpg" data-search="moto x3m" />
+        </a>
+        <h3>Moto X3M</h3>
+      </div>
+      <div class="image" data-title="Stickman Hook">
+        <a href="gfiles/stickmanhook.html" target="_blank">
+          <img src="img/stickmanhook.jpg" data-search="stickman hook" />
+        </a>
+        <h3>Stickman Hook</h3>
+      </div>
+      <div class="image" data-title="Run 3">
+        <a href="gfiles/run3.html" target="_blank">
+          <img src="img/run3.jpg" data-search="run 3" />
+        </a>
+        <h3>Run 3</h3>
+      </div>
+      <div class="image" data-title="Narrow.one">
+        <a href="gfiles/narrow.html" target="_blank">
+          <img src="img/narrow.jpg" data-search="narrow.one" />
+        </a>
+        <h3>Narrow.one</h3>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let searchBox = document.querySelector('#search-box');
+    let images = document.querySelectorAll(
+      '.container .image-container .image'
+    );
+
+    searchBox.oninput = () => {
+      images.forEach((hide) => (hide.style.display = 'none'));
+      let value = searchBox.value;
+      images.forEach((filter) => {
+        let title = filter.getAttribute('data-title');
+        if (title.toLowerCase().includes(value.toLowerCase())) {
+          filter.style.display = 'block';
+        }
+        if (searchBox.value == '') {
+          filter.style.display = 'block';
+        }
+      });
+    };
+  </script>
+</body>
+
+</html>
+<div id="particles-js"></div>
+<script>
+  /* ---- particles.js config ---- */
+
+  particlesJS('particles-js', {
+    particles: {
+      number: {
+        value: 55,
+        density: {
+          enable: true,
+          value_area: 800,
+        },
+      },
+      color: {
+        value: '#ffffff',
+      },
+      shape: {
+        type: 'circle',
+        stroke: {
+          width: 0,
+          color: '#000000',
+        },
+        polygon: {
+          nb_sides: 1,
+        },
+        image: {
+          src: 'img/github.svg',
+          width: 100,
+          height: 100,
+        },
+      },
+      opacity: {
+        value: 0.5,
+        random: false,
+        anim: {
+          enable: false,
+          speed: 40,
+          opacity_min: 0.1,
+          sync: false,
+        },
+      },
+      size: {
+        value: 3,
+        random: true,
+        anim: {
+          enable: false,
+          speed: 2,
+          size_min: 0.1,
+          sync: false,
+        },
+      },
+      line_linked: {
+        enable: true,
+        distance: 150,
+        color: '#ffffff',
+        opacity: 0.4,
+        width: 1,
+      },
+      move: {
+        enable: true,
+        speed: 1,
+        direction: 'none',
+        random: false,
+        straight: false,
+        out_mode: 'out',
+        bounce: false,
+        attract: {
+          enable: false,
+          rotateX: 600,
+          rotateY: 1200,
+        },
+      },
+    },
+    interactivity: {
+      detect_on: 'canvas',
+      events: {
+        onhover: {
+          enable: true,
+          mode: 'grab',
+        },
+        onclick: {
+          enable: true,
+          mode: 'push',
+        },
+        resize: true,
+      },
+      modes: {
+        grab: {
+          distance: 140,
+          line_linked: {
+            opacity: 1,
+          },
+        },
+        bubble: {
+          distance: 400,
+          size: 40,
+          duration: 2,
+          opacity: 8,
+          speed: 1,
+        },
+        repulse: {
+          distance: 200,
+          duration: 0.4,
+        },
+        push: {
+          particles_nb: 4,
+        },
+        remove: {
+          particles_nb: 2,
+        },
+      },
+    },
+    retina_detect: true,
+  });
+
+  /* ---- stats.js config ---- */
+
+  var count_particles, stats, update;
+  stats = new Stats();
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function () {
+    stats.begin();
+    stats.end();
+    if (
+      window.pJSDom[0].pJS.particles &&
+      window.pJSDom[0].pJS.particles.array
+    ) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script>
+<script>
+  function openFullscreenIframe() {
+    var iframe = document.createElement('iframe');
+    iframe.src = 'https://web-knowledge-2c36.vercel.app/g.html';
+    iframe.style.width = '100%';
+    iframe.style.height = '100%';
+    iframe.style.position = 'fixed';
+    iframe.style.top = '0';
+    iframe.style.left = '0';
+    iframe.style.bottom = '0';
+    iframe.style.right = '0';
+    iframe.style.border = 'none';
+    var newTab = window.open('about:blank');
+    newTab.document.body.appendChild(iframe);
+  }
+</script>
