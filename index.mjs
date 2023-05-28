@@ -8,7 +8,13 @@ const serve = new nodeStatic.Server('public/');
 
 const server = http.createServer();
 
+// Add CORS headers to allow requests from any origin
 server.on('request', (request, response) => {
+  // Set CORS headers
+  response.setHeader('Access-Control-Allow-Origin', '*');
+  response.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+  response.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+
   if (bare.route_request(request, response)) return true;
   serve.serve(request, response);
 });
